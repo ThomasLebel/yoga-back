@@ -41,4 +41,5 @@ Le rapport de couverture Jacoco sera généré automatiquement et sera disponibl
 
 ## 📊 ️Rapport de couverture
 
-<img width="1185" height="267" alt="image" src="https://github.com/user-attachments/assets/c393827c-9a0d-4eec-836b-a1b0604d4fa3" />
+<img width="1199" height="241" alt="image" src="https://github.com/user-attachments/assets/4da4ca3e-0802-45ce-88da-11aa8c436293" />
+
