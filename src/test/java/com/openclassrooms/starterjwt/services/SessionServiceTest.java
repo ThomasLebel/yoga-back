@@ -206,7 +206,10 @@ public class SessionServiceTest {
     @DisplayName("Should remove user from session")
     public void noLongerParticipate() {
         //Arrange
+        User otherUser = new User();
+        otherUser.setId(2L);
         session.getUsers().add(user);
+        session.getUsers().add(otherUser);
 
         when(sessionRepository.findById(1L)).thenReturn(Optional.of(session));
 
@@ -215,7 +218,7 @@ public class SessionServiceTest {
 
         //Assert
         assertFalse(session.getUsers().contains(user));
-        assertTrue(session.getUsers().isEmpty());
+        assertTrue(session.getUsers().size() == 1);
         verify(sessionRepository, times(1)).findById(1L);
         verify(sessionRepository, times(1)).save(session);
     }
